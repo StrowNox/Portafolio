@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Plan Básico</title>
+    <style>
+        /* ----------- Configuración base ----------- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(160deg, #0f0f0f, #1a1a1a);
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        /* ----------- Contenedor principal ----------- */
+        .plan-details {
+            width: 100%;
+            max-width: 520px;
+            background-color: #141414;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.7s ease-out;
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ----------- Imagen destacada ----------- */
+        .featured-image-container {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .featured-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .featured-image-container:hover .featured-image {
+            transform: scale(1.08);
+        }
+
+        /* ----------- Contenido ----------- */
+        .content-container {
+            padding: 30px;
+        }
+
+        .plan-details h1 {
+            color: #fff;
+            font-size: 2.4rem;
+            margin: 0 0 12px;
+            letter-spacing: 0.5px;
+            background: linear-gradient(to right, #ffffff, #3B82F6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .plan-details p {
+            color: #b0b0b0;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .plan-details h2 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-left: 4px solid #3B82F6;
+            padding-left: 10px;
+        }
+
+        /* ----------- Lista de características ----------- */
+        .plan-details ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .plan-details li {
+            background-color: #1f1f1f;
+            padding: 14px;
+            font-weight: 500;
+            color: #e0e0e0;
+            border-left: 4px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .plan-details li:hover {
+            background-color: #262626;
+            border-left: 4px solid #3B82F6;
+        }
+
+        /* ----------- Contacto ----------- */
+        .contact-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+        }
+
+        /* Botón WhatsApp */
+        .whatsapp-contact-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: linear-gradient(90deg, #3B82F6, #3B82F6);
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px #111827;
+        }
+
+        .whatsapp-contact-button:hover {
+            filter: brightness(1.1);
+            transform: translateY(-2px);
+        }
+
+        /* Botón volver */
+        .back-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background-color: #222;
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #333;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="plan-details">
+        <!-- Imagen -->
+        <div class="featured-image-container">
+            <img src="image.png" alt="Imagen destacada del plan" class="featured-image">
+        </div>
+        
+        <!-- Contenido -->
+        <div class="content-container">
+            <h1>Plan Esencial</h1>
+            <p>Pensado para dar el primer paso hacia una presencia digital profesional. Con este plan, obtendrás un sitio atractivo, adaptado a tu marca y listo para funcionar en cualquier dispositivo, garantizando que tu negocio destaque desde el inicio.</p>
+            
+            <h2>Características principales:</h2>
+            <ul>
+                <li>✅ Diseño web personalizado de hasta 3 páginas únicas, adaptadas a la identidad de tu marca.</li>
+                <li>✅ Diseño 100% responsivo, garantizando una experiencia perfecta en computadoras, tablets y móviles.</li>
+                <li>✅ Optimización de carga y rendimiento, para que tu sitio sea rápido y eficiente.</li>
+                <li>✅ Integración de formularios de contacto y enlaces a redes sociales.</li>
+                <li>✅ Soporte técnico por correo electrónico 24/7, para resolver cualquier duda o ajuste.</li>
+            </ul>
+
+            <!-- Contacto -->
+            <div class="contact-section">
+                <h2>¿Tienes preguntas? Contáctanos</h2>
+                <a href="https://wa.me/573170322471" class="whatsapp-contact-button" target="_blank">
+                    💬 Chatea con nosotros
+                </a>
+            </div>
+
+            <a href="index.html" class="back-button">⬅ Volver a la página principal</a>
+        </div>
+    </div>
+</body>
+</html>

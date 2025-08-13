@@ -1,0 +1,259 @@
+        /* Estilos generales */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        @media(min-width: 560px){
+            .pc{
+                display: none;
+            }
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            height: 60px;
+        }
+
+        .header-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 1;
+            background-color: rgba(0,0,0,0.6);
+            backdrop-filter: blur(6px);
+            transition: all 0.3s ease;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            height: 100%;
+            position: relative;
+            color: #fff;
+        }
+
+        .header-left i,
+        .header-right i {
+            font-size: 20px;
+        }
+
+        .logo {
+            height: 40px;
+            transition: filter 0.3s ease;
+        }
+
+        body.scrolled .header-bg {
+            background-color: rgba(0,0,0,0.6);
+            backdrop-filter: blur(6px);
+            filter: none;
+            opacity: 1;
+        }
+
+        body.scrolled .logo {
+            filter: none;
+        }
+
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .hero-image-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .hero-image {
+            min-width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .hero-content {
+            padding: 10px;
+            border-radius: 8px;
+            z-index: 3;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+        }
+
+        .hero-subtitle {
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .hero-subtitle,
+        .hero-title {
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+        }
+
+        .hero-title {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 8px 0 16px 0;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            border: 2px solid #ffffff;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .btn-primary {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #ffffff;
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-carousel-controls {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            right: 10px;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            z-index: 4;
+        }
+
+        .carousel-control-left,
+        .carousel-control-right {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 18px;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .hero-carousel-pagination {
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            padding: 20px 0;
+            margin-top: 20px;
+            z-index: 4;
+            position: relative;
+        }
+
+        .dot {
+            width: 20px;
+            height: 2px;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background-color: #fff;
+        }
+
+        .content-below {
+            padding: 20px;
+            background-color: #111;
+            color: #eee;
+            position: relative;
+            z-index: 2;
+        }
+
+        @media only screen and (min-width: 340px) {
+            .hero-buttons {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .btn {
+                width: auto;
+                flex: 0 0 auto;
+            }
+        }
+
+        @media only screen and (max-width: 375px) {
+            .hero-title {
+                font-size: 28px;
+            }
+        }
+
+        @media only screen and (min-width: 601px) {
+            .header {
+                background-color: #fff;
+                height: 80px;
+            }
+            .header-content {
+                color: #000;
+            }
+            .logo {
+                filter: none;
+            }
+            .header-bg {
+                display: none;
+            }
+        }
+
+        /* --- Animación fade-in-up --- */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .fade-in-up.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
