@@ -1,0 +1,678 @@
+
+
+/** ---------------------------------  LOGO  ----------------------------------**/
+
+
+
+
+
+
+/** ---------------------------------  BUSCADOR  ----------------------------------**/
+
+
+
+
+    header {
+      position: sticky;
+      top: 0;
+      background-color: #fff;
+      z-index: 9999;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .navegation {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      max-width: 50px;
+    }
+
+    /* Menú centrado */
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      flex: 1;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #232323;
+      font-weight: bolder;
+      font-size: 13px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Buscador alineado a la derecha */
+    .buscador {
+      display: flex;
+      align-items: center;
+      width: 160px;
+      background: #fff;
+      border: 1px solid #eae2e2df;
+      border-radius: 15px;
+      padding: 4px 8px;
+    }
+
+    .buscador img {
+      width: 18px;
+      margin-right: 5px;
+    }
+
+    .buscador input {
+      border: none;
+      outline: none;
+      width: 100%;
+      background: transparent;
+      font-size: 13px;
+    }
+
+
+
+
+
+
+
+
+/** ---------------------------------  SLIDER STYLES  ----------------------------------**/
+
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    text-align: center;
+    padding: 5px 20px;
+    font-size: 13px;
+    background: #f0f0f0;
+}
+
+.slide a{
+    font-size: 9px;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+/** ---------------------------------  INFORMACION  ----------------------------------**/
+
+
+
+.informacion a{
+    font-size: 13px;
+    color: #b0b0b0;
+    text-decoration: none;
+    margin: 20px 5px;
+}
+
+.informacion a:hover{
+    transition: ease-in-out 0.3s;
+    color: blue;
+}
+
+.zapatos{
+    color: rgb(52, 52, 52) !important;
+}
+
+
+
+/** ---------------------------------  INFORMACION FOTOS ----------------------------------**/
+
+
+
+
+
+
+
+.page-layout {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  gap: 40px;
+  padding: 20px;
+}
+
+
+
+
+/* ------------------------------------------Columna izquierda------------------------------------------ */
+
+
+
+
+.left-sticky {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+  flex-shrink: 0;
+}
+
+.image-column {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 100px;
+}
+
+.thumbnails img {
+  width: 50px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: border 0.2s ease;
+}
+
+.main-img {
+  width: 450px;
+  padding-left: 50px;
+}
+
+
+
+
+
+/*------------------------------------------ Columna derecha ------------------------------------------*/
+
+
+
+
+.right-content {
+  flex: 1;
+}
+
+.right-content p{
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+.right-content section {
+  margin-bottom: 150px;
+}
+
+.right-content h2 {
+  font-size: 20px;
+}
+
+/* ------------------------------------------------  Precio --------------------------------------------------------*/
+
+
+.precio {
+  font-weight: bold;
+  font-size: 13px;
+  padding: 10px 0;
+}
+
+
+
+/* -----------------------------------------------Tallas ----------------------------------------------------*/
+
+
+
+.tallas button {
+  padding: 8px 20px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+}
+
+.tallas button.seleccionada {
+  border: 2px solid black;
+}
+
+
+.terminosycondiciones{
+  font-size: 13px;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.terminosycondiciones a{
+  color: black;
+}
+
+
+/* -----------------------------------------  Botón de compra  ----------------------------------------------------- */
+
+
+
+.boton-comprar {
+
+  margin-top: 20px;
+  background: black;
+  color: white;
+  padding: 15px 150px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+
+/* ----------------------------------  Descripción del producto  ---------------------------------- */
+
+
+
+
+.descripcion-producto {
+  max-width: 500px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.6;
+  margin-top: 30px;
+}
+
+.envio strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.envio span {
+  color: #555;
+}
+
+.envio a {
+  color: #888;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.envio a:hover {
+  text-decoration: underline;
+}
+
+.texto-descripcion {
+  margin: 20px 0;
+}
+
+.ver-datos {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #000;
+}
+
+
+
+
+/* ------------------------------------------ Accordion (BASICAMENTE LA BARRA QUE SE ABRE ABAJO) ------------------------------------*/
+
+
+
+
+
+
+.accordion {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.accordion-header {
+  background: white;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.accordion-header.active .arrow {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 16px;
+  font-size: 15px;
+  color: #000;
+}
+
+.accordion-content p {
+  margin: 8px 0;
+}
+
+
+
+/* ------------------------------------------ MAS ZAPATOS ------------------------------------*/
+
+
+
+
+/* Variables para colores y fuentes, para mantener la consistencia */
+:root {
+    --primary-font: 'Poppins', sans-serif;
+    --text-color-dark: #333;
+    --text-color-light: #666;
+    --old-price-color: #999;
+    --discount-green: #388e3c;
+    --background-gray: #f4f4f4;
+    --border-color: #e0e0e0;
+}
+
+/* Estilos de la sección principal del carrusel */
+.products-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Contenedor del encabezado (título y flechas) */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+}
+
+/* Estilo del título "Top más vendidos" */
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-color-dark);
+    font-family: var(--primary-font);
+}
+
+/* Contenedor de las flechas de navegación */
+.navigation-arrows {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilo de los botones de flecha */
+.arrow-button {
+    background-color: var(--background-gray);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color-dark);
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Contenedor de la cuadrícula de productos (el carrusel) */
+.products-grid {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    scroll-snap-type: x mandatory; /* Desplazamiento que se "ajusta" a las tarjetas */
+    padding-bottom: 10px;
+    -ms-overflow-style: none; /* Oculta la barra de desplazamiento en IE/Edge */
+    scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+}
+
+/* Ocultar la barra de desplazamiento en navegadores basados en WebKit (Chrome, Safari, etc.) */
+.products-grid::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilo de cada tarjeta de producto individual */
+.product-card {
+    flex: 0 0 33,3%; /* Ancho fijo para cada tarjeta, no se encogen */
+    scroll-snap-align: start; /* La tarjeta se ajusta al inicio del área de desplazamiento */
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+/* Contenedor de la imagen del producto */
+.product-image-container {
+    width: 100%;
+    background-color: var(--background-gray);
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+}
+
+/* Estilo de la imagen */
+.product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Contenedor de la información del producto */
+.product-info {
+    padding: 15px 0;
+}
+
+/* Nombre del producto */
+.product-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+    font-family: var(--primary-font);
+    color: var(--text-color-dark);
+}
+
+/* Descripción, colores y etiqueta de sustentabilidad */
+.product-description,
+.product-colors,
+.product-sustainable {
+    font-size: 0.9rem;
+    color: var(--text-color-light);
+    margin: 0 0 2px 0;
+    font-family: var(--primary-font);
+}
+
+/* Etiqueta de materiales sustentables */
+.product-sustainable {
+    color: #ff6600; /* Naranja para destacar */
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* Contenedor de los detalles de precio */
+.product-price-details {
+    display: flex;
+    align-items: baseline; /* Alinea los precios por su base */
+    gap: 10px;
+    margin-top: 5px;
+}
+
+/* Precio actual del producto */
+.current-price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color-dark);
+    font-family: var(--primary-font);
+}
+
+/* Precio sin descuento (sólo el actual) */
+.current-price.no-discount {
+    font-size: 1.2rem;
+}
+
+/* Precio anterior (tachado) */
+.old-price {
+    font-size: 0.9rem;
+    color: var(--old-price-color);
+    text-decoration: line-through;
+    font-family: var(--primary-font);
+}
+
+/* Estilo de la etiqueta de descuento */
+.discount-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 4px;
+    font-family: var(--primary-font);
+}
+
+/* Color específico para la etiqueta de descuento verde */
+.discount-green {
+    background-color: var(--discount-green);
+}
+
+
+
+
+
+
+/* ------------------------------------------ PIE DE PAGINA ------------------------------------*/
+
+
+
+
+
+
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #ffffff; /* Un gris claro similar al de la imagen */
+    padding: 40px 20px;
+    font-family: var(--primary-font); /* Usamos la misma fuente */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    flex-grow: 1; /* Para que ocupe el espacio disponible */
+}
+
+.footer-column h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--text-color-dark);
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: var(--text-color-light); /* Un gris más claro para los enlaces */
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: var(--text-color-dark);
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    color: var(--text-color-light);
+}
+
+.location-icon {
+    font-size: 1.2rem;
+}
+
+.location a {
+    text-decoration: none;
+    color: var(--text-color-light);
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alineación arriba para el copyright */
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color); /* Línea divisoria */
+}
+
+.copyright p {
+    font-size: 0.8rem;
+    color: var(--text-color-light);
+    margin: 0;
+}
+
+.legal-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.legal-links a {
+    text-decoration: none;
+    color: var(--text-color-light);
+    font-size: 0.8rem;
+    transition: color 0.3s;
+}
+
+.legal-links a:hover {
+    color: var(--text-color-dark);
+}
+
+.super-logo {
+    width: 150px; /* Ajusta el tamaño del logo si es necesario */
+    height: auto;
+}
