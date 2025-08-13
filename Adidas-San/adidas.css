@@ -1,0 +1,1000 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+
+
+
+/**----------------------------------------------   CAJA DE DESCUENTOS  ----------------------------------------------------------------**/
+
+
+
+
+
+
+
+
+
+.cajadescuentos{
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#texto {
+    transition: opacity 0.5s ease-in-out;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**----------------------------------------------   BARRA DE NAVEGACION SUPERIOR   ----------------------------------------------------------------**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /* No padding aquí, el padding se manejará en las barras individuales */
+}
+
+/* Estilos para la barra superior */
+.top-bar {
+    background-color: #ffffff; /* Fondo negro como en la imagen */
+    color: #fff;
+    padding: 8px 20px; /* Padding vertical y horizontal */
+    font-size: 12px; /* Tamaño de fuente más pequeño */
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    align-items: center;
+    max-width: 1200px; /* Mismo ancho máximo que la barra de navegación principal */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+.top-bar-links {
+    display: flex;
+    gap: 15px; /* Espacio entre los enlaces */
+    margin-right: 15px; /* Espacio entre los enlaces y la bandera */
+}
+
+.top-bar-links a {
+    color: #000000;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease; /* Transición suave para el subrayado */
+}
+
+.top-bar-links a:hover {
+    text-decoration: underline;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+}
+
+.flag-icon {
+    width: 20px; /* Tamaño de la bandera */
+    height: auto;
+    border: 1px solid #ffffff; /* Borde sutil para la bandera */
+}
+
+
+
+.icon-wrapper {
+    position: relative; /* Necesario para posicionar el contador absolutamente */
+    display: inline-block; /* Para que el wrapper no ocupe todo el ancho */
+}
+
+.contador-carrito {
+    position: absolute;
+    top: -5px; /* Ajusta la posición vertical */
+    right: -5px; /* Ajusta la posición horizontal */
+    background-color: red; /* Color de fondo del contador */
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%; /* Para hacerlo circular */
+    padding: 2px 2px; /* Ajusta el padding para el tamaño del número */
+    min-width: 18px; /* Asegura un ancho mínimo para números de un dígito */
+    text-align: center;
+    line-height: 14px; /* Centra el texto verticalmente */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    display: none; /* Oculto por defecto si el carrito está vacío */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**----------------------------------------------   BARRA DE NAVEGACION INFERIOR   ----------------------------------------------------------------**/
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para la barra de navegación principal (tu código anterior, con ajustes) */
+.navegation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px; /* Ancho máximo de la barra de navegación */
+    margin: 0 auto; /* Centra la barra de navegación */
+    padding: 10px 0; /* Padding vertical para esta sección */
+}
+
+.logo {
+    max-width: 50px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    flex: 1;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #232323;
+    font-weight: bolder;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    background: #fff;
+    border: 1px solid #eae2e2df;
+    border-radius: 15px;
+    padding: 4px 8px;
+    overflow: hidden;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    font-size: 13px;
+    padding: 0;
+}
+
+.search-input::placeholder {
+    color: #888;
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.search-button:hover {
+    color: #000;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.icon-wrapper {
+    position: relative;
+    font-size: 24px;
+    color: #555;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-wrapper:hover {
+    color: #000;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background-color: #ffc107;
+    color: #333;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**----------------------------------------------   INFORMACION E IMAGENES    ----------------------------------------------------------------**/
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+small{
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+}
+
+img{
+    max-width: 500px;
+}
+
+video{
+    max-width: 500px;;
+}
+#navegation {
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    padding-right: 20px;
+    color: #000;
+    text-align: center;
+    align-items: center;
+}
+
+nav a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* --- Product Breadcrumb / Navigation (encima) --- */
+.encima {
+    position: absolute;
+    top: 150px;
+    left: 80px;
+    transform: translate(-15%, -15%);
+    background: none;
+}
+
+.encima a {
+    color: #000;
+    padding-right: 10px;
+    background: none;
+}
+
+/* --- PRODUCT DETAILS - PARTE DERECHA --- */
+.parte-derecha {
+    position: absolute;
+    width: 515px;
+    right: 0;
+    top: 148px;
+    height: 1000px;
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    
+    /* Contenedor principal de la parte derecha */
+    display: flex;
+    flex-direction: column;
+}
+
+.parte-derecha .estilo {
+    padding: 30px;
+}
+
+.parte-derecha .otro {
+    position: absolute;
+    right: 20px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.parte-derecha .titulo {
+    padding: 10px 0;
+}
+
+.parte-derecha .precio {
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.parte-derecha .text {
+    padding: 5px 0px;
+    font-weight: lighter;
+}
+
+.parte-derecha .espacio {
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+
+/* --- Color Options (mulcajas) --- */
+
+.parte-derecha .mulcajas{
+display:inline-block;
+position:relative;
+margin:1px;
+}
+.parte-derecha .mulcajas img{
+display:flex;
+display:block;
+width:70px;
+height:70px;
+object-fit:cover;
+}
+.parte-derecha .mulcajas a::after{
+content:'';
+position:absolute;
+left:0;
+bottom:0;
+height:2px;
+width:0%;
+background-color:#000;
+transition:width 0.3s ease;
+}
+
+.parte-derecha .mulcajas a.selected::after{
+width:100%;
+}
+
+
+
+.parte-derecha .centro {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    color: #000;
+    padding: 25px 180px;
+    background-color: #F0F0F0;
+    border-radius: 4px;
+}
+
+/* --- Size Guide (parra) --- */
+.parte-derecha .parra {
+    margin: 0;
+    padding-top: 20px;
+    display: block;
+}
+
+.parte-derecha .parraesti {
+    text-decoration: none;
+    color: #000;
+}
+
+/* --- TALLAS Y BOTONES --- */
+.parte-derecha .contenedor-detalles-producto {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 450px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.parte-derecha .columna-tallas {
+    width: 450px;
+}
+
+.parte-derecha .encabezado-tallas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.parte-derecha .encabezado-tallas h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.parte-derecha .enlace-guia-tallas {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.parte-derecha .enlace-guia-tallas:hover {
+    text-decoration: underline;
+}
+
+.parte-derecha .opciones-tallas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+    margin-bottom: 20px;
+}
+
+.parte-derecha .boton-talla {
+    background-color: #f0f0f0;
+    border: 1px solid #ffffff;
+    padding: 15px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s, border-color 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parte-derecha .boton-talla:not(.deshabilitado):hover {
+    background-color: #e0e0e0;
+    border-color: #ffffff;
+}
+
+.parte-derecha .boton-talla.seleccionado {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.parte-derecha .boton-talla.deshabilitado {
+    background-color: #f8f8f8;
+    color: #ccc;
+    cursor: not-allowed;
+    border-style: dashed;
+}
+
+.parte-derecha .icono-campana {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.parte-derecha .info-talla-real {
+    background-color: #e6f7ff;
+    border: 1px solid #91d5ff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.parte-derecha .info-talla-real p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.parte-derecha .info-talla-real a{
+    color: black;
+    font-weight: bold;
+}
+
+.parte-derecha .icono-info {
+    margin-right: 8px;
+    font-size: 18px;
+    color: #000000;
+}
+
+.parte-derecha .seccion-anadir-bolsa {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.parte-derecha .boton-anadir-bolsa {
+    flex: 1;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.parte-derecha .boton-anadir-bolsa:hover {
+    background-color: #333;
+}
+
+.parte-derecha .icono-flecha {
+    margin-left: 10px;
+}
+
+.parte-derecha .boton-icono-corazon {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.parte-derecha .boton-icono-corazon:hover {
+    background-color: #e0e0e0;
+}
+
+.parte-derecha .info-pago {
+    font-size: 14px;
+    color: #555;
+}
+
+.parte-derecha .logo-klarna {
+    font-weight: bold;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.parte-derecha .plata{
+    color: #000000;
+}
+
+.parte-derecha .info-pago a {
+    color: #000000;
+    font-weight: 100;
+}
+
+.parte-derecha .info-pago a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de la notificación */
+.notificacion {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+.notificacion.mostrar {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------   SECCION ENVIO   ---------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+.prime-delivery,
+.shipping-returns {
+    position: absolute;
+    left: 1050px;
+    top: 1450px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd; /* Separador */
+    font-size: 14px;
+    color: #333;
+}
+
+.prime-delivery p,
+.shipping-returns p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.prime-delivery p:first-child {
+    font-weight: bold;
+    color: #17789d; /* Color azul para Prime, similar a la imagen */
+    font-size: 16px;
+    margin-bottom: 10px; /* Espacio extra debajo del título de Prime */
+}
+
+.prime-delivery a {
+    color: #000000;
+    text-decoration: underline;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.prime-delivery a:hover {
+    color: #555;
+}
+
+.shipping-returns p {
+    margin-bottom: 15px;
+}
+
+.shipping-returns a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.shipping-returns a:hover {
+    color: #555;
+}
+
+/* Estilos para los iconos */
+.icono-prime {
+    margin-right: 5px;
+    color: #17789d; /* Color del tick de Prime */
+    font-weight: bold;
+}
+
+.icono-envio,
+.icono-devolucion {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333; /* Color oscuro para los iconos */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------   SECCION BOTONES   ---------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+.accordion {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-top: 20px;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.accordion-header.active .arrow {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 16px;
+    font-size: 15px;
+    color: #000;
+}
+
+.accordion-content p {
+    margin: 8px 0;
+}
+.botones {
+    padding: 70px;
+    
+}
+.reviews {
+    width: 65%;
+    padding: 40px;
+    text-align: left;
+    background: none;
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.description {
+    width: 65%;
+    padding: 30px;
+    text-align: left;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
+}
+.details {
+    width: 65%;
+    padding: 40px;
+    text-align: left;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
+}
+.how-to-style {
+    width: 65%;
+    padding: 40px;
+    text-align: left;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
+}
+.reviews span {
+    align-items: center;
+    font-size: 20px;
+}
+.description span {
+    align-items: center;
+
+    font-size: 20px;
+}
+.details span {
+    align-items: center;
+    font-size: 20px;
+}
+.how-to-style span {
+    align-items: center;
+    font-size: 20px;
+}
+.tamaño {
+    font-size: 40px;
+}
+.mismalinea {
+    padding-bottom: 30px;
+    width: 495px;
+    display: flex;
+    justify-content: space-between;
+}
+.misssma {
+    display: flex;
+    justify-content: space-between  ;
+}
+.end {
+    width: 900px;
+}
+.pegado {
+    display: flex;
+    gap: 20px;
+}
+.pegado .separado {
+    display: flex;
+}
+.bor {
+    width: 160px;   
+    border: solid 2px rgba(88, 88, 88, 0.1);
+    background: rgba(87, 87, 87, 0.1);
+    border-radius: 4px;
+    padding-right: 10;
+}
+.junto {
+    width: 55px;
+    border: solid 4px rgba(88, 88, 88, 0.1);
+    background: rgba(87, 87, 87, 0.1);
+    border-radius: 4px;
+    justify-content: center;
+
+}
+.verde {
+    width: 55px;
+    border: solid 4px rgba(20, 200, 20,0.5);
+    border-radius: 4px;
+}
+.final {
+    width: 55px;
+    border: solid 4px rgba(88, 88, 88, 0.1);
+    background: rgba(87, 87, 87, 0.1);
+    border-radius: 4px;
+}
+.pla {
+    width: 160px;   
+    border: solid 2px rgba(88, 88, 88, 0.1);
+    background: rgba(87, 87, 87, 0.1);
+    border-radius: 4px;
+    padding-right: 10;
+}
+.toge {
+    width: 85px;
+    border: solid 4px rgba(88, 88, 88, 0.1);
+    background: rgba(87, 87, 87, 0.1);
+    border-radius: 4px;
+    justify-content: center;
+
+}
+.gre {
+    width: 45px;
+    border: solid 4px rgba(20, 200, 20,0.5);
+    border-radius: 4px;
+}
+.fin {
+    width: 30px;
+    border: solid 4px rgba(88, 88, 88, 0.1);
+    background: rgba(87, 87, 87, 0.1);
+    border-radius: 4px;
+}
+
+.comfor {
+    padding-top: 3px;
+    width: 1115px ;
+    display: flex;
+    justify-content: space-between;
+}
+.comfor .ajuste {
+    width: 210px;
+    justify-content: space-between;
+}
+.comfor .posi {
+    display: flex;
+    justify-content: space-between;
+}
+
+.posi  {
+    width: 660px;
+}
+.posi .movimi {
+    width: 500px;
+}
+.posi .movimiento {
+    width: 450px;
+}
+.linea {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    width: 490px;
+    display: flex;
+    justify-content: space-between;
+}
