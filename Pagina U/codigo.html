@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia SWEBOK</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="left">
+        <img src="navidaimagen.png" alt="Imagen de Navidad" id="navidaimagen">
+      </div>
+      <div class="center">
+        <div class="header-text">
+          <h2><span class="thin-text">UNIVERSIDAD DE</span> <span class="red-text">PAMPLONA</span></h2>
+          <p><i><span class="bold-text">Formando líderes</span> para la</i></p>
+          <p><i><span class="bold-text">construcción</span> de un nuevo <span class="bold-text">país</span> en <span class="bold-text">paz</span></i></p>
+        </div>
+        <nav>
+          <a href="#requerimientos"><button>Requerimientos</button></a>
+          <a href="#diseno"><button>Diseño</button></a>
+          <a href="#construccion"><button>Construcción</button></a>
+          <a href="#pruebas"><button>Pruebas</button></a>
+          <a href="#mantenimiento"><button>Mantenimiento</button></a>
+          <a href="#gestion"><button>Gestión de Configuración</button></a>
+        </nav>
+        <div class="sweebok" id="sweebok"></div>
+        <div class="sweebok2" id="sweebok2"><h2>GUIA SWEBOK</h2></div>
+        <div class="intro-text" id="intro-text">
+          <div class="introduccion-content">
+            <p><strong>El SWEBOK v4.0 (Guide to the Software Engineering Body of Knowledge)</strong> es una guía reconocida internacionalmente, publicada por la IEEE Computer Society, que compila el conocimiento esencial y las mejores prácticas de la ingeniería de software. Esta guía tiene como propósito principal estandarizar la disciplina, proporcionando una base común para la enseñanza, investigación, certificación profesional y aplicación práctica. Su estructura aborda 18 áreas clave que cubren todo el ciclo de vida del desarrollo de software, desde la concepción hasta el mantenimiento, integrando temas fundamentales y emergentes como Agile, DevOps, y tecnologías modernas como inteligencia artificial (IA) e Internet de las cosas (IoT).</p>
+            <p>Esta versión, actualizada para reflejar las necesidades actuales de la industria, organiza cada área de conocimiento con definiciones, prácticas recomendadas, procesos, entradas, salidas, herramientas y técnicas, convirtiéndose en una referencia esencial para profesionales y académicos.</p>
+            <p>En este blog, nos centraremos en las primeras seis áreas fundamentales descritas en el SWEBOK v4.0:</p>
+            <ul>
+              <li><strong>Requerimientos:</strong> Cómo identificar y gestionar las necesidades y restricciones del software.</li>
+              <li><strong>Diseño:</strong> Proceso de estructuración de soluciones técnicas a partir de los requisitos.</li>
+              <li><strong>Construcción:</strong> Codificación y actividades asociadas al desarrollo del software.</li>
+              <li><strong>Pruebas:</strong> Técnicas y niveles para verificar y validar que el software cumple sus objetivos.</li>
+              <li><strong>Mantenimiento:</strong> Modificaciones necesarias para corregir, adaptar o mejorar el software después de su entrega.</li>
+              <li><strong>Gestión de configuración:</strong> Control y supervisión de cambios para mantener la integridad y trazabilidad del producto.</li>
+            </ul>
+            <p>A lo largo de esta serie, exploraremos cada uno de estos temas, desglosando su importancia, los procesos involucrados y las mejores prácticas para implementarlos con éxito en proyectos de software. ¡Acompáñanos en este recorrido por los pilares de la ingeniería de software!</p>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <img src="logo.png" alt="Logo">
+      </div>
+    </div>
+  </main>
+  <section id="requerimientos">
+    <h2>Requerimientos</h2>
+    <div class="requerimientos-content">
+      <h3>Definición:</h3>
+      <p>Los requerimientos son una descripción formal de las propiedades, características o comportamientos que un sistema debe poseer para satisfacer necesidades específicas de los usuarios o resolver problemas reales. Constituyen la base de todo proyecto de software y su adecuada definición es crucial para el éxito del desarrollo.</p>
+      <h3>Categorías de Requerimientos:</h3>
+      <ul>
+        <li><strong>Requerimientos funcionales:</strong> Describen las funciones específicas que el sistema debe realizar, como el procesamiento de datos o la interacción con el usuario. Ejemplo: "El sistema debe permitir a los usuarios registrar su información personal".</li>
+        <li><strong>Requerimientos no funcionales:</strong> Establecen restricciones o cualidades del sistema, como rendimiento, seguridad, usabilidad, disponibilidad o compatibilidad. Ejemplo: "El sistema debe responder a cada consulta en menos de 2 segundos".</li>
+      </ul>
+      <h3>Actividades Principales en la Gestión de Requerimientos:</h3>
+      <ul>
+        <li><strong>Elicitación:</strong> Identificar y recopilar los requerimientos desde diferentes fuentes, incluyendo usuarios, documentos existentes y observación directa. Se utilizan técnicas como entrevistas, talleres, análisis de tareas y prototipos para lograr una visión completa.</li>
+        <li><strong>Análisis:</strong> Validar los requerimientos identificados, resolviendo conflictos y asegurando su claridad, consistencia y viabilidad técnica. Aquí también se priorizan los requerimientos en función de su relevancia.</li>
+        <li><strong>Especificación:</strong> Formalizar los requerimientos en documentos claros y detallados, utilizando lenguajes estructurados o diagramas que permitan su fácil comprensión por los desarrolladores y stakeholders.</li>
+        <li><strong>Gestión de Requerimientos:</strong> Supervisar los cambios durante el ciclo de vida del proyecto, asegurando la trazabilidad de los requerimientos iniciales hasta su implementación final.</li>
+      </ul>
+      <h3>Importancia:</h3>
+      <p>Los requerimientos mal definidos son una de las principales causas de fallos en los proyectos de software. Por ello, su correcta identificación y gestión son vitales para cumplir con las expectativas de los stakeholders y garantizar la calidad del producto final.</p>
+    </div>
+  </section>
+  <section id="diseno">
+    <h2>Diseño</h2>
+    <div class="diseno-content">
+      <h3>Definición:</h3>
+      <p>El diseño del software es el proceso de definir la estructura, los componentes, las interfaces y otras características necesarias para transformar los requerimientos en un sistema funcional. Representa el puente entre lo que el sistema debe hacer (requerimientos) y cómo lo hará (implementación).</p>
+      <h3>Niveles de Diseño:</h3>
+      <ul>
+        <li><strong>Diseño arquitectónico:</strong> Define la estructura general del sistema, incluyendo la división en módulos o componentes principales y la relación entre ellos.</li>
+        <li><strong>Diseño de alto nivel:</strong> Detalla la funcionalidad de cada módulo, identificando subsistemas y sus interacciones.</li>
+        <li><strong>Diseño detallado:</strong> Especifica las implementaciones individuales de cada módulo, incluyendo algoritmos, estructuras de datos y aspectos técnicos específicos.</li>
+      </ul>
+      <h3>Principios Clave del Diseño:</h3>
+      <ul>
+        <li><strong>Modularidad:</strong> Dividir el sistema en partes independientes que puedan desarrollarse y probarse por separado.</li>
+        <li><strong>Abstracción:</strong> Centrarse en los aspectos esenciales y dejar de lado los detalles innecesarios en cada nivel.</li>
+        <li><strong>Cohesión y acoplamiento:</strong> Promover módulos altamente cohesionados (centrados en una tarea específica) y con bajo acoplamiento (dependencia mínima entre ellos).</li>
+      </ul>
+      <h3>Herramientas y Técnicas:</h3>
+      <p>El diseño utiliza diagramas de arquitectura y herramientas como UML (Unified Modeling Language) para representar visualmente la estructura del sistema. Además, los patrones de diseño, como el patrón MVC (Model-View-Controller), ayudan a resolver problemas comunes de manera estándar y eficiente.</p>
+    </div>
+  </section>
+  <section id="construccion">
+    <h2>Construcción</h2>
+    <div class="construccion-content">
+      <h3>Definición:</h3>
+      <p>La construcción del software incluye la codificación, la creación de pruebas iniciales y la integración de los componentes. Es el paso donde el diseño conceptual se convierte en un producto funcional.</p>
+      <h3>Aspectos Clave:</h3>
+      <ul>
+        <li><strong>Minimización de la complejidad:</strong> Escribir código claro, organizado y documentado para facilitar su mantenimiento.</li>
+        <li><strong>Gestión de dependencias:</strong> Asegurar que los módulos interactúen correctamente entre sí, minimizando los riesgos de errores.</li>
+        <li><strong>Pruebas durante la construcción:</strong> Implementar pruebas unitarias y de integración para validar el comportamiento de los componentes mientras se desarrollan.</li>
+      </ul>
+      <h3>Prácticas Modernas:</h3>
+      <ul>
+        <li><strong>Desarrollo basado en pruebas (TDD):</strong> Escribir primero las pruebas antes del código, asegurando que cada nueva función pase los criterios establecidos.</li>
+        <li><strong>Programación modular:</strong> Dividir el código en unidades independientes y reutilizables.</li>
+        <li><strong>Uso de herramientas como Git:</strong> Para el control de versiones y la colaboración en equipo.</li>
+      </ul>
+    </div>
+  </section>
+  <section id="pruebas">
+    <h2>Pruebas</h2>
+    <div class="pruebas-content">
+      <h3>Definición:</h3>
+      <p>Las pruebas verifican que el software cumpla con los requerimientos y se comporte como se espera en diferentes escenarios. Su objetivo es identificar y corregir defectos antes de que el sistema sea entregado al usuario final.</p>
+      <h3>Niveles de Prueba:</h3>
+      <ul>
+        <li><strong>Unitarias:</strong> Validan funciones o módulos individuales.</li>
+        <li><strong>Integración:</strong> Aseguran que los módulos trabajen correctamente juntos.</li>
+        <li><strong>Sistema:</strong> Evalúan el sistema completo en condiciones simuladas.</li>
+        <li><strong>Aceptación:</strong> Verifican que el producto cumpla con los requisitos definidos por los usuarios.</li>
+      </ul>
+      <h3>Técnicas de Prueba:</h3>
+      <ul>
+        <li><strong>Basadas en especificaciones:</strong> Comparar el comportamiento del sistema con los requisitos funcionales.</li>
+        <li><strong>Basadas en la estructura:</strong> Evaluar el flujo interno del código, como las pruebas de cobertura.</li>
+        <li><strong>Exploratorias:</strong> Explorar el sistema sin un plan específico para identificar errores inesperados.</li>
+      </ul>
+    </div>
+  </section>
+  <section id="mantenimiento">
+    <h2>Mantenimiento</h2>
+    <div class="mantenimiento-content">
+      <h3>Definición:</h3>
+      <p>El mantenimiento incluye todas las modificaciones realizadas al software después de su entrega para corregir errores, adaptarlo a nuevos entornos o mejorar su funcionalidad y rendimiento.</p>
+      <h3>Tipos de Mantenimiento:</h3>
+      <ul>
+        <li><strong>Correctivo:</strong> Reparar defectos identificados en el software.</li>
+        <li><strong>Adaptativo:</strong> Modificar el software para ajustarlo a cambios en el entorno, como nuevas plataformas o sistemas operativos.</li>
+        <li><strong>Perfectivo:</strong> Introducir mejoras para aumentar la eficiencia o añadir nuevas funciones.</li>
+      </ul>
+    </div>
+  </section>
+  <section id="gestion">
+    <h2>Gestión de Configuración</h2>
+    <div class="gestion-content">
+      <h3>Definición:</h3>
+      <p>La gestión de configuración asegura que todos los cambios en los artefactos del software sean controlados, rastreados y documentados.</p>
+      <h3>Componentes principales:</h3>
+      <ul>
+        <li><strong>Identificación de configuración:</strong> Etiquetar y organizar los elementos que forman el producto.</li>
+        <li><strong>Control de cambios:</strong> Evaluación y aprobación de modificaciones.</li>
+        <li><strong>Auditoría de configuración:</strong> Verificar que las configuraciones cumplan con los estándares.</li>
+      </ul>
+      <h3>Herramientas y prácticas:</h3>
+      <ul>
+        <li><strong>Uso de sistemas de control de versiones (e.g., Git):</strong> Para gestionar cambios y colaborar en equipo.</li>
+        <li><strong>Aplicación de auditorías regulares:</strong> Para mantener la calidad y coherencia.</li>
+      </ul>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

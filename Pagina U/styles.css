@@ -1,0 +1,331 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+  padding-top: 20px; 
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.left img, .right img {
+  max-width: 400px;
+  height: auto;
+  cursor: pointer; 
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.header-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.header-text .thin-text {
+  font-weight: 300; 
+  color: gray;
+}
+.header-text h2 {
+  font-size: 1.8em;
+}
+.header-text p {
+  font-size: 1.1em;
+  color: gray;
+  font-style: italic;
+  margin: 0;
+}
+.red-text {
+  color: red;
+}
+.bold-text {
+  font-weight: bold;
+  color: black;
+}
+.sweebok p {
+  font-size: 1.2em;
+  color: black;
+  margin-top: 10px;
+}
+.intro-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1em;
+}
+nav {
+  display: flex;
+  gap: 5px; 
+  margin-top: 10px;
+  flex-wrap: nowrap; 
+  justify-content: flex-end;
+}
+button {
+  padding: 5px 10px;
+  font-size: 0.8em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s; 
+  background-color: #f9f9f9;
+  color: black;
+}
+button:hover {
+  background-color: red;
+  color: white;
+}
+button.active {
+  background-color: red;
+  color: white;
+}
+.right img {
+  max-width: 280px;
+  height: auto;
+}
+section {
+  display: none; 
+  margin-top: 20px;
+  font-size: 1.2em;
+  text-align: center;
+}
+section.active {
+  display: block;
+}
+.introduccion-content {
+  max-width: 800px;
+  margin: -20px auto 0;
+  padding: 20px;
+  position: relative;
+  text-align: justify;
+  padding-left: 200px;
+}
+.introduccion-content p {
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+.requerimientos-content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.requerimientos-content h3 {
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+.requerimientos-content p, .requerimientos-content ul {
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+.requerimientos-content ul {
+  list-style-type: none; 
+  padding-left: 0;
+}
+.requerimientos-content ul li {
+  background-color: #e0e0e0;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.diseno-content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.diseno-content h3 {
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+.diseno-content p, .diseno-content ul {
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+.diseno-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.diseno-content ul li {
+  background-color: #e0e0e0;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.construccion-content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.construccion-content h3 {
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+.construccion-content p, .construccion-content ul {
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+.construccion-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.construccion-content ul li {
+  background-color: #e0e0e0;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.pruebas-content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.pruebas-content h3 {
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+.pruebas-content p, .pruebas-content ul {
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+.pruebas-content ul {
+  list-style-type: none; 
+  padding-left: 0;
+}
+.pruebas-content ul li {
+  background-color: #e0e0e0;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.mantenimiento-content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.mantenimiento-content h3 {
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+.mantenimiento-content p, .mantenimiento-content ul {
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+.mantenimiento-content ul {
+  list-style-type: none; 
+  padding-left: 0;
+}
+.mantenimiento-content ul li {
+  background-color: #e0e0e0;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.gestion-content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.gestion-content h3 {
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+.gestion-content p, .gestion-content ul {
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+.gestion-content ul {
+  list-style-type: none; 
+  padding-left: 0;
+}
+.gestion-content ul li {
+  background-color: #e0e0e0;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.sweebok2 {
+  text-align: center;
+  padding: 10px;
+  padding-left: 200
+}
+.gestion-content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.gestion-content h3 {
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+.gestion-content p, .gestion-content ul {
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+.gestion-content ul {
+  list-style-type: none; 
+  padding-left: 0;
+}
+.gestion-content ul li {
+  background-color: #e0e0e0;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.sweebok2 {
+  text-align: center;
+  padding: 10px;
+  padding-left: 200px;
+}
+button.button-animation {
+  animation: buttonClick 0.5s forwards;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+section.fade-in {
+  animation: fadeIn 1s forwards;
+}
+button.button-animation {
+  animation: buttonClick 0.5s forwards; 
+}
+
+@keyframes buttonClick {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
